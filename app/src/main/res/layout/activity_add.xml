@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.unreallover.taskhelper.AddActivity"
+    android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标题"
+                android:textSize="10pt"/>
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入标题"
+                android:selectAllOnFocus="true"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内容"
+                android:textSize="10pt"/>
+            <EditText
+                android:id="@+id/fileinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入内容"
+                android:selectAllOnFocus="true"
+
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日期"
+                android:id="@+id/date"
+                android:textSize="10pt"/>
+            <EditText
+                android:id="@+id/show_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请选择时间"
+                android:selectAllOnFocus="true"
+                />
+
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间"
+                android:id="@+id/time"
+                android:textSize="10pt"/>
+            <EditText
+                android:id="@+id/show_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请选择时间"
+                android:selectAllOnFocus="true"
+                />
+            </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优先级"
+            android:id="@+id/priority"
+            android:textSize="10pt"/>
+        <EditText
+            android:id="@+id/show_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请选择优先级"
+            android:selectAllOnFocus="true"
+            />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    <Button
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:id="@+id/confirm"
+        android:textSize="10pt"
+        android:layout_width="0dp" />
+    <Button
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:id="@+id/cancle"
+        android:textSize="10pt"
+        android:layout_width="0dp" />
+    </LinearLayout>
+
+</LinearLayout>
