@@ -17,7 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".AddActivity" />
-        <activity android:name=".TaskActivity"></activity>
+        <activity android:name=".TaskActivity">
+            <activity android:name=".AlarmActivity" />
+        </activity>
+        <activity android:name=".EnActivity"></activity>
     </application>
 
 </manifest>
